@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Distances</string>
-    <string name="descripcion">Selecciona una opcion</string>
+    <string name="SSI">SISTEMA SOLAR INTERIOR</string>
+    <string name="SSE">SISTEMA SOLAR EXTERIOR</string>
+    <string name="VIA_LACTEA">VIA LACTEA</string>
+    <string name="UNIVERSO">UNIVERSO</string>
 </resources>
