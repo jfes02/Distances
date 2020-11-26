@@ -14,4 +14,11 @@ public class SSI extends AppCompatActivity {
         setContentView(R.layout.activity_s_s_i);
     }
 
+    public void Sol(View view){
+
+        Intent intent_Sol = new Intent(this,Sol.class);
+        startActivity(intent_Sol);
+    }
+
+
 }

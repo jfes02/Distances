@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Distances">
-        <activity android:name=".SSI"></activity>
+        <activity android:name=".Sol"></activity>
+        <activity android:name=".SSI" />
         <activity
             android:name=".Menu"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

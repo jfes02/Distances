@@ -34,6 +34,7 @@
         android:layout_width="416dp"
         android:layout_height="61dp"
         android:layout_marginTop="8dp"
+        android:onClick="Sol"
         android:text="SOL"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:backgroundTint="#1C2833"
