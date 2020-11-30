@@ -4,4 +4,15 @@
     <string name="SSE">SISTEMA SOLAR EXTERIOR</string>
     <string name="VIA_LACTEA">VIA LACTEA</string>
     <string name="UNIVERSO">UNIVERSO</string>
+    <string name="SELEC_VELOC">Seleccione la Velocidad</string>
+    <string name="VEL_LUZ">Velocidad de la Luz</string>
+    <string name="MAX_VEL">Maxima Velocidad Actual</string>
+    <string name="IR">Ir</string>
+
+
+
+    <string name="DISTANCIA_SOL">Distancia: 1 UA o 149,597,870 kilómetros</string>
+    <string name="DESCRIPCION_SOL">Dentro del sol entrarian 1.3 millones de Tierras</string>
+
+
 </resources>
