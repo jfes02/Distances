@@ -7,6 +7,37 @@
     android:background="#000000"
     tools:context=".SSI">
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:gravity="left|center_vertical"
+        android:onClick="Sol"
+        android:orientation="vertical"
+        android:text="SUN"
+        app:backgroundTint="#154360"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_alignParentRight="true"
+        android:gravity="left|center_vertical"
+        android:onClick="Sol"
+        android:orientation="vertical"
+        android:text="MERCURY"
+        app:backgroundTint="#154360"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="395dp"
@@ -16,70 +47,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ssi" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Menu"
-        app:backgroundTint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="416dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
-        android:onClick="Sol"
-        android:text="SOL"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:backgroundTint="#1C2833"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="416dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
-        android:text="MERCURIO"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:backgroundTint="#1C2833"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="416dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
-        android:text="VENUS"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:backgroundTint="#1C2833"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="416dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
-        android:text="MARTE"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:backgroundTint="#1C2833"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

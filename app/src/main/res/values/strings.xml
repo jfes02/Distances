@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Distances</string>
+    <string name="app_name">Universe Distances</string>
     <string name="SSI">SISTEMA SOLAR INTERIOR</string>
     <string name="SSE">SISTEMA SOLAR EXTERIOR</string>
     <string name="VIA_LACTEA">VIA LACTEA</string>
@@ -8,7 +8,7 @@
     <string name="VEL_LUZ">Velocidad de la Luz</string>
     <string name="MAX_VEL">Maxima Velocidad Actual</string>
     <string name="IR">Ir</string>
-
+    <string name="VIAJANDO">VIAJANDO . . .</string>
 
 
     <string name="DISTANCIA_SOL">Distancia: 1 UA o 149,597,870 kilómetros</string>

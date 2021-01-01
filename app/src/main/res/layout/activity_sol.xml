@@ -5,7 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
+    android:id="@+id/layoutTemp"
     tools:context=".Sol">
+
+    <TextView
+        android:id="@+id/KM_R"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:textColor="#F6F3F3"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarSol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/irSol"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSol"
+        app:layout_constraintVertical_bias="0.59" />
 
     <RadioGroup
         android:id="@+id/radioGroupSol"
@@ -52,7 +68,7 @@
         android:text="@string/DISTANCIA_SOL"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,13 +78,13 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:text="@string/DESCRIPCION_SOL"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -80,10 +96,10 @@
         android:text="@string/SELEC_VELOC"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -102,26 +118,26 @@
     <ProgressBar
         android:id="@+id/progressBarSol"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="397dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="362dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="68dp"
         android:progress="0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/irSol" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="264dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="12dp"
-        android:text="Tardarias"
+        android:id="@+id/viajandoSol"
+        android:layout_width="355dp"
+        android:layout_height="46dp"
         android:textColor="#F6F3F3"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBarSol"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.193" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
