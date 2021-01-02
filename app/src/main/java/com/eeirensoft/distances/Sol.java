@@ -138,8 +138,8 @@ public class Sol extends AppCompatActivity {
                            if (Locale.getDefault().getDisplayLanguage() != "Spanish"){
                            Toast.makeText(Sol.this, "You're Reaching Venus", Toast.LENGTH_LONG).show();
                            tv.setText("Venus, the most earth-like planet in the solar system.");
-                           ImageView imageView = (ImageView)findViewById(R.id.imageView4);
-                           imageView.setImageResource(R.drawable.venus);
+                           //ImageView imageView = (ImageView)findViewById(R.id.imageView4);
+                           //imageView.setImageResource(R.drawable.venus);
 
 
                            }

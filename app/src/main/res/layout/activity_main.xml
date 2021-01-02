@@ -6,7 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/solGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sol"
+        tools:ignore="MissingConstraints" />
+
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -22,6 +30,21 @@
         android:onClick="Pasar"
         android:text="Button"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="355dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:text="rfrfrrfsifuishfisfhisufhisudf \n hisufhsiudfhisufhisufhsuidfhsiufhuisdfhisfhisufhiusdhfisudfhsuidfhuisdfh44444444444444444" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

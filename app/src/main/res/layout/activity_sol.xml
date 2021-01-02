@@ -10,18 +10,17 @@
 
     <TextView
         android:id="@+id/KM_R"
-        android:layout_width="112dp"
-        android:layout_height="40dp"
+        android:layout_width="137dp"
+        android:layout_height="27dp"
         android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
         android:textColor="#F6F3F3"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/progressBarSol"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/irSol"
         app:layout_constraintTop_toBottomOf="@+id/radioGroupSol"
-        app:layout_constraintVertical_bias="0.59" />
+        app:layout_constraintVertical_bias="0.598" />
 
     <RadioGroup
         android:id="@+id/radioGroupSol"
@@ -50,29 +49,28 @@
             android:textSize="14sp" />
     </RadioGroup>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="485dp"
-        android:layout_height="227dp"
-        android:layout_marginTop="4dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/solGif"
+        android:layout_width="400dp"
+        android:layout_height="205dp"
+        android:src="@drawable/sol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sun" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/DISTANCIA_SOL"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/solGif" />
 
     <TextView
         android:id="@+id/textView3"
@@ -118,8 +116,8 @@
     <ProgressBar
         android:id="@+id/progressBarSol"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="362dp"
-        android:layout_height="44dp"
+        android:layout_width="382dp"
+        android:layout_height="27dp"
         android:layout_marginTop="68dp"
         android:progress="0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,8 +127,8 @@
 
     <TextView
         android:id="@+id/viajandoSol"
-        android:layout_width="355dp"
-        android:layout_height="46dp"
+        android:layout_width="379dp"
+        android:layout_height="48dp"
         android:textColor="#F6F3F3"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
