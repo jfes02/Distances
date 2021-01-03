@@ -35,11 +35,9 @@ public class Sol extends AppCompatActivity {
 
     private RadioButton rb1, rb2;
     private ProgressBar pb;
-    private TextView tv;
-    private TextView tv2;
-    private ImageView  iv4;
     private RadioGroup rg;
     private TextView tv3;
+    private TextView mtv, mtvV, mtvM;
 
 
     @Override
@@ -50,10 +48,11 @@ public class Sol extends AppCompatActivity {
         rb1 = (RadioButton) findViewById(R.id.radioButtonVL);
         rb2 = (RadioButton) findViewById(R.id.radioButtonMV);
         pb = (ProgressBar) findViewById(R.id.progressBarSol);
-        tv = (TextView) findViewById(R.id.viajandoSol);
         rg = (RadioGroup) findViewById(R.id.radioGroupSol);
         tv3 = (TextView) findViewById(R.id.KM_R);
-
+        mtv = (TextView) findViewById(R.id.ETM_SOL);
+        mtvV = (TextView) findViewById(R.id.ETM_VENUS);
+        mtvM = (TextView) findViewById(R.id.ETM_MERCURIO);
     }
 
     public void Calcular(View view) {
@@ -91,8 +90,10 @@ public class Sol extends AppCompatActivity {
                if (j == 0) {
                    runOnUiThread(new Runnable() {
                        public void run() {
-                           tv.setText("Traveling . . .");
+
                            rg.setVisibility(View.GONE);
+                           mtvV.setVisibility(View.GONE);
+                           mtvM.setVisibility(View.GONE);
                        }
                    });
                }
@@ -137,7 +138,6 @@ public class Sol extends AppCompatActivity {
 
                            if (Locale.getDefault().getDisplayLanguage() != "Spanish"){
                            Toast.makeText(Sol.this, "You're Reaching Venus", Toast.LENGTH_LONG).show();
-                           tv.setText("Venus, the most earth-like planet in the solar system.");
                            //ImageView imageView = (ImageView)findViewById(R.id.imageView4);
                            //imageView.setImageResource(R.drawable.venus);
 
@@ -145,7 +145,6 @@ public class Sol extends AppCompatActivity {
                            }
                            else{
                                Toast.makeText(Sol.this, "Estas Llegando a Venus", Toast.LENGTH_LONG).show();
-                               tv.setText("Venus, El planeta mas parecido a la tierra en el sistema solar.");
                            }
                        }
                    });
