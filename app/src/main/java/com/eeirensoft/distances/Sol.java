@@ -15,7 +15,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewManager;
 import android.view.ViewParent;
+import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -36,8 +38,9 @@ public class Sol extends AppCompatActivity {
     private RadioButton rb1, rb2;
     private ProgressBar pb;
     private RadioGroup rg;
-    private TextView tv3;
-    private TextView mtv, mtvV, mtvM;
+    private TextView tv3, tv4, tv_ds, tv_dm, tv_dv;
+    private Button btn;
+    private pl.droidsonroids.gif.GifImageView gif1;
 
 
     @Override
@@ -50,18 +53,21 @@ public class Sol extends AppCompatActivity {
         pb = (ProgressBar) findViewById(R.id.progressBarSol);
         rg = (RadioGroup) findViewById(R.id.radioGroupSol);
         tv3 = (TextView) findViewById(R.id.KM_R);
-        mtv = (TextView) findViewById(R.id.ETM_SOL);
-        mtvV = (TextView) findViewById(R.id.ETM_VENUS);
-        mtvM = (TextView) findViewById(R.id.ETM_MERCURIO);
+        tv_ds = (TextView) findViewById(R.id.tv_descSol);
+        tv4 = (TextView) findViewById(R.id.selectVeloc);
+        //tv_dm = (TextView) findViewById(R.id.tv_descMercury);
+        //tv_dv = (TextView) findViewById(R.id.tv_descVen);
+        btn = (Button)findViewById(R.id.irSol);
+        gif1 = (pl.droidsonroids.gif.GifImageView) findViewById(R.id.traGif);
+
+        //tv_dm.setVisibility(View.GONE);
+        //tv_dv.setVisibility(View.GONE);
+        gif1.setVisibility(View.GONE);
+        tv_ds.setVisibility(View.GONE);
+
     }
 
     public void Calcular(View view) {
-        //499 segundos tardariamos en llegar al Sol desde la tierra a la velocidad de la luz.
-        /*
-        27 000 KM/h
-        149 000 000
-        149000000/27000=5518Hrs*60=33100*60=19,864,800
-        */
 
         Trayecto trayecto = new Trayecto();
         trayecto.execute();
@@ -77,7 +83,7 @@ public class Sol extends AppCompatActivity {
         boolean flag = false;
         private ProgressDialog progreso;
         int distance=149597870;
-        String S_distance;
+        String S_distance, S_distance2;
 
         @Override
         protected String doInBackground(String... strings) {
@@ -85,30 +91,36 @@ public class Sol extends AppCompatActivity {
         if (rb1.isChecked() == true) {
 
            for (j = 0; j <= 100; j++) {
+
               jota = String.valueOf(j);
 
                if (j == 0) {
                    runOnUiThread(new Runnable() {
                        public void run() {
 
+                           tv4.setVisibility(View.GONE);
                            rg.setVisibility(View.GONE);
-                           mtvV.setVisibility(View.GONE);
-                           mtvM.setVisibility(View.GONE);
+                           btn.setVisibility(View.GONE);
                        }
                    });
                }
 
 
-              SystemClock.sleep(5000);
-
-
                runOnUiThread(new Runnable() {
                    public void run() {
-                            distance=distance-1495978;
-                            S_distance = String.valueOf(distance);
-                            tv3.setText(S_distance+" km");
-                       }
+                       distance=distance-1495978;
+                       S_distance2 = String.valueOf(distance);
+                       S_distance = String.format("%,d", Integer.parseInt(S_distance2));
+                       tv3.setText("Remaining Kilometers: "+S_distance);
+                       gif1.setVisibility(View.VISIBLE);
+
+                   }
                });
+
+                SystemClock.sleep(5000);
+
+
+
 
                 System.out.println("Ahora vales :: " + j);
                 pb.setProgress(j);

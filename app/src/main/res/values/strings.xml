@@ -8,10 +8,5 @@
     <string name="VEL_LUZ">Velocidad de la Luz</string>
     <string name="MAX_VEL">Maxima Velocidad Actual</string>
     <string name="IR">Ir</string>
-    <string name="VIAJANDO">VIAJANDO . . .</string>
-    <string name="DESCRIPCION_SOL">Distancia: 1 UA o 149,597,870 kilómetros\n
-                                   Dentro del sol entrarian 1.3 millones de Tierras</string>
-
-
-
+    <string name="DESCRIPCION_SOL">Distancia: 1 Unidad Astronomica (UA) o 149,597,870 kilómetros.\n\nDentro del sol entrarian 1.3 millones de Tierras.\n\nSu edad es de 4.6 billones de años.\n\nEl Sol es una esfera perfecta jamás observada en la naturaleza.\n\nAl Sol le toma 226 millones de años orbitar el derredor del centro de la Vía Láctea.\n</string>
 </resources>
